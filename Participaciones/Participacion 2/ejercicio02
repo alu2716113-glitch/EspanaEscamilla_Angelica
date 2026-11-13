@@ -1,0 +1,21 @@
+#Angelica Marisol Espana Escamilla, Grupo Matutitno, Ejercicio #2: La pizzeria
+
+tamaño = int(input("Ingresa el tamaño de la pizza (1-Personal, 2-Mediana o 3-Familiar): "))
+
+cantidad = int(input("Ingresa la cantidad de pizzas: "))
+total = 0
+
+if(tamaño == 1):
+    total = cantidad * 99
+elif(tamaño == 2):
+    total = cantidad * 149
+elif(tamaño == 3):
+    total = cantidad * 199
+else:
+    print("Tamaño no válido")
+
+if(tamaño >= 1 and tamaño <= 3):
+    if(cantidad >= 3):
+        total = total * 0.9
+    print(f"El total a pagar es: ${total:.2f}")
+    

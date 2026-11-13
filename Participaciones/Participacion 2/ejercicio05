@@ -1,0 +1,14 @@
+#Angelica Marisol Espana Escamilla, Grupo Matutitno, Ejercicio #5:  Acceso al sistema
+
+usuario = input("Ingresa tu usuario: ")
+
+if(usuario == "alumno"):
+    contraseña = input("Ingresa tu contraseña: ")
+    if(contraseña == "python2026"):
+        print("Bienvenido al sistema")
+    else:
+        print("Contraseña incorrecta")
+else:
+    print("Usuario no encontrado")
+    
+    

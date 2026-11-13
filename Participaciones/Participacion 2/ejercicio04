@@ -1,0 +1,22 @@
+#Angelica Marisol Espana Escamilla, Grupo Matutitno, Ejercicio #4: Piedra, papel o tijera
+
+jugador1 = input("Jugador 1, escribe tu jugada: ")
+jugador2 = input("Jugador 2, escribe tu jugada: ")
+
+jugador1 = jugador1.lower()
+jugador2 = jugador2.lower()
+
+if((jugador1 == "piedra" or jugador1 == "Piedra" or jugador1 == "PIEDRA" or jugador1 == "papel" or jugador1 == "Papel" or jugador1 == "PAPEL" or jugador1 == "tijera" or jugador1 == "Tijera" or jugador1 == "TIJERA") and (jugador2 == "piedra" or jugador2 == "Piedra" or jugador2 == "PIEDRA" or jugador2 == "papel" or jugador2 == "Papel" or jugador2 == "PAPEL" or jugador2 == "tijera" or jugador2 == "Tijera" or jugador2 == "TIJERA")):
+
+    if(jugador1 == jugador2 or (jugador1 == "Piedra" and jugador2 == "piedra") or (jugador1 == "PIEDRA" and jugador2 == "piedra") or (jugador1 == "papel" and jugador2 == "Papel") or (jugador1 == "PAPEL" and jugador2 == "papel") or (jugador1 == "tijera" and jugador2 == "Tijera") or (jugador1 == "TIJERA" and jugador2 == "tijera")):
+        print("Empate")
+    elif((jugador1 == "piedra" or jugador1 == "Piedra" or jugador1 == "PIEDRA") and (jugador2 == "tijera" or jugador2 == "Tijera" or jugador2 == "TIJERA")):
+        print("Gana el jugador 1")
+    elif((jugador1 == "tijera" or jugador1 == "Tijera" or jugador1 == "TIJERA") and (jugador2 == "papel" or jugador2 == "Papel" or jugador2 == "PAPEL")):
+        print("Gana el jugador 1")
+    elif((jugador1 == "papel" or jugador1 == "Papel" or jugador1 == "PAPEL") and (jugador2 == "piedra" or jugador2 == "Piedra" or jugador2 == "PIEDRA")):
+        print("Gana el jugador 1")
+    else:
+        print("Gana el jugador 2")
+else:
+    print("Jugada no válida")

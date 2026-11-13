@@ -1,0 +1,12 @@
+#Angelica Marisol Espana Escamilla, Grupo Matutitno, Ejercicio #1: El semaforo
+
+color = input("Ingresa el color del semaforo: ")
+
+if(color == "rojo" or color == "Rojo" or color == "ROJO"):
+    print("Alto total")
+elif(color == "amarillo" or color == "Amarillo" or color == "AMARILLO"):
+    print("Precaucion, disminuye la velocidad")
+elif(color == "verde" or color == "Verde" or color == "VERDE"):
+ print("Puedes avanzar")
+else:
+    print("Color no valido")
